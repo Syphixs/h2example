@@ -7,7 +7,10 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 
-embassy-executor = { version = "0.5.0", features = ["task-arena-size-8192"] }
+embassy-executor = { version = "0.5.0", features = [
+  "task-arena-size-8192",
+  "integrated-timers",
+] }
 embassy-time = "0.3.0"
 esp-backtrace = { version = "0.11.0", features = [
   "esp32h2",
